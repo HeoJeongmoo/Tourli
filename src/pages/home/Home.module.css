@@ -1,0 +1,244 @@
+/* ==== visual ==== */
+.mainModel {
+    height: 634px;
+    background-image: url(../../assets/image/visual/main_model.png);
+    background-size: cover;
+    border-radius: 20px;
+    padding: 125px 70px;
+}
+
+/* 타이핑 api로 span 3번(원래 1번) */
+/* .mainModel span span span */
+.mainModel span,
+.mainModel p:nth-child(2) {
+    opacity: 0.7;
+}
+
+.mainModel > p:nth-child(1) {
+    line-height: 128%;
+}
+
+article section:nth-child(2) {
+    padding: 120px 0 0 0;
+}
+
+article section:not(:nth-child(2), :nth-child(1)) {
+    padding: 140px 0 0 0;
+}
+
+article > section:nth-child(1) span {
+    color: #fff;
+}
+
+article > section span {
+    color: #4673F6;
+}
+
+/* ==== section1 : 핵심 가치 ==== */
+.section1Content1 {
+    padding: 40px 40px 0 40px;
+    width: 688px;
+    height: 460px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 10px 32px 1px rgba(0,0,0,.1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.section1Content2 {
+    padding: 40px 0 0 40px;
+    margin-top: 30px;
+    width: 688px;
+    height: 277px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 10px 32px 1px rgba(0,0,0,.1);
+    border-radius: 20px;
+}
+
+.section1Content1 div:nth-child(1) p:nth-child(2),
+.section1Content2 div:nth-child(1) p:nth-child(2) {
+    color: var(--black-opacity-60);
+}
+
+.section1Content3 {
+    padding: 40px;
+    width: 484px;
+    height: 765px;
+    background: linear-gradient(to top left,#0041FF, #7397FF);
+    box-shadow: 0px 10px 32px 1px rgba(0,0,0,.1);
+    border-radius: 20px;
+}
+
+.section1Content3 .section1Button {
+    border-color: #fff;
+}
+
+/*  */
+.function1 {
+    background-image: url(../../assets/image/section1/function_1.png);
+    width: 100%;
+    height: 387.75px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* s */
+.function2 {
+    border-top-left-radius: 20px;
+    overflow: hidden;
+    background-image: url(../../assets/image/section1/function_2.png);
+    width: 307px;
+    height: 237px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.function2 .screen {
+    width: 50%;
+    border-left: 2px solid #4673F6;
+    background-color: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(10px);
+    right: 0;
+}
+
+.function2 .lockButton {
+    left: -24px;
+    top: calc(50% - 24px);
+    width: 48px;
+    height: 48px;
+    transition: .3s;
+    background-image: url(../../assets/svg/lock-button.svg);
+}
+
+.function2 .lockButton:hover {
+    opacity: .75;
+}
+
+.function2 .lockButton:active {
+    opacity: .5;
+}
+
+.section1Button {
+    height: 42px;
+    width: 103px;
+    border-radius: 100px;
+    padding: 10px 12px 10px 16px;
+}
+
+.section1Button p:nth-child(1) {
+    width: 49px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.card {
+    width: 310px;
+    height: 380px;
+    flex: 0 0 auto;
+    background-color: #fff;
+    border-radius: 12px;
+    margin: 0 8.5px;
+    overflow: hidden;
+    transform: skewY(19deg) skewX(15deg);
+}
+
+.card .cardImg {
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url(../../assets/image/section1/function_3/background_3.png);
+}
+
+.card .cardImg::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    background: linear-gradient(to bottom, 
+    rgba(255, 255, 255, 0) 0%, 
+    rgba(255, 255, 255, 0.2) 50%, 
+    rgba(255, 255, 255, 1) 100%);
+    width: 100%;
+    height: 100%;
+}
+
+.card .cardContentBloack {
+    padding: 20px;
+    height: 180px;
+    width: 100%;
+} 
+
+.skew {
+    left: -45%;
+}
+
+.skew2 {
+    bottom: -76.5%;
+}
+
+.card:nth-child(2) {
+    margin-top: 110px;
+}
+
+.card:nth-child(3) {
+    margin-top: 220px;
+}
+
+.card .cardButton {
+    width: 209px;
+    height: 50px;
+    background-color: #4673F6;
+    border-radius: 8px;
+}
+
+.card .cardHeartButton {
+    width: 49px;
+    height: 49px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 1px solid rgb(34, 34, 34, 0.2);
+}
+
+.heart {
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  background-image: url(../../assets/svg/heart.svg);
+}
+
+.background {
+    position: absolute;
+    height: 200px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(61, 111, 255, 0), #0545FF);
+}
+
+/* 섹션2 === 이용 후 삶의 변화 */
+.reviews {
+    box-shadow: 0 10px 32px 1px rgba(0,0,0,.1);
+    width: 100%;
+    height: 487px;
+    background-image: url(../../assets/image/section2/reviews.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* 섹션3 === 앱 설치 */
+#section3 {
+    padding-top: 230px;
+}
+
+.phone {
+    background-image: url(../../assets/image/section2/iphone.png);
+    height: 521px;
+    width: 586px;
+    background-size: cover;
+    background-position: center;
+}

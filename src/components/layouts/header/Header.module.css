@@ -1,0 +1,19 @@
+header {
+    height: 65px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+header > div > nav > a {
+    margin-right: 24px;
+    margin-top: 6px;
+}
+
+header .logo {
+    display: block;
+    margin-top: 0; 
+    height: 31px;
+    width: 21.69px;
+    background-size: cover;
+    background-image: url(../../../assets/svg/header-logo.svg);
+}
